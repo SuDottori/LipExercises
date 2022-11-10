@@ -1,0 +1,5 @@
+type token = TRUE | THEN | RPAREN | LPAREN | IF | FALSE | EOF | ELSE
+val menhir_begin_marker : int
+val xv_prog : Ast.boolExpr
+val xv_expr : Ast.boolExpr
+val menhir_end_marker : int

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/boolexpr/META"
+  "_build/install/default/lib/boolexpr/dune-package"
+  "_build/install/default/lib/boolexpr/opam"
+]
+bin: [
+  "_build/install/default/bin/boolexpr"
+]
