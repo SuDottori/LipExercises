@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/andboolexpr/META"
+  "_build/install/default/lib/andboolexpr/dune-package"
+  "_build/install/default/lib/andboolexpr/opam"
+]
+bin: [
+  "_build/install/default/bin/andboolexpr"
+]
