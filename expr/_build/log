@@ -1,5 +1,5 @@
-# dune init proj boolexpr
+# dune init proj arithexpr
 # OCAMLPARAM: unset
 # Shared cache: disabled
-# Workspace root: /home/mattia/LipMyGit/LipExercises/expr
-# Auto-detected concurrency: 8
+# Workspace root: /home/leinad/Documenti/GitHub/LipExercises/expr
+# Auto-detected concurrency: 4

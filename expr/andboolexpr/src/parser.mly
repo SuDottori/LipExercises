@@ -27,8 +27,6 @@ prog:
     | e =expr; EOF { e }   
 ;
 
-
-
 expr:
     | TRUE { True }
     | FALSE { False }
