@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/sarithexpr/META"
+  "_build/install/default/lib/sarithexpr/dune-package"
+  "_build/install/default/lib/sarithexpr/opam"
+]
+bin: [
+  "_build/install/default/bin/sarithexpr"
+]
