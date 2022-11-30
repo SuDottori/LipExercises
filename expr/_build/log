@@ -1,4 +1,4 @@
-# dune init proj sarithexpr
+# dune init project uarithexpr
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/leinad/Documenti/GitHub/LipExercises/expr

@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/uarithexpr/META"
+  "_build/install/default/lib/uarithexpr/dune-package"
+  "_build/install/default/lib/uarithexpr/opam"
+]
+bin: [
+  "_build/install/default/bin/uarithexpr"
+]
