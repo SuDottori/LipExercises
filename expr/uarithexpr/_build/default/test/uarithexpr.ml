@@ -19,7 +19,9 @@ let tests = [
   ("succ 0 or 0", 1);
   ("pred 0", 0);
   ("pred pred succ 0", 0);
-  ("true and succ succ pred pred succ 0", 1)
+  ("true and succ succ pred pred succ 0", 1);
+  ("true and false",0);
+  ("false and true",0)
 ]
 
 

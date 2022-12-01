@@ -1,9 +1,9 @@
-# dune build
+# dune test
 # OCAMLPARAM: unset
 # Shared cache: disabled
 # Workspace root: /home/leinad/Documenti/GitHub/LipExercises/expr/uarithexpr
 # Auto-detected concurrency: 4
-$ /home/leinad/.opam/lip/bin/ocamlc.opt -config > /tmp/dune_edb1bf_output
+$ /home/leinad/.opam/lip/bin/ocamlc.opt -config > /tmp/dune_93752b_output
 # Dune context:
 #  { name = "default"
 #  ; kind = "default"
@@ -112,17 +112,51 @@ $ /home/leinad/.opam/lip/bin/ocamlc.opt -config > /tmp/dune_edb1bf_output
 #      ; windows_unicode = false
 #      }
 #  }
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamldep.opt -modules -impl src/main.ml) > _build/default/src/.uarithexprLib.objs/main.ml.d
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I src/.uarithexprLib.objs/byte -no-alias-deps -opaque -open UarithexprLib -o src/.uarithexprLib.objs/byte/uarithexprLib__Main.cmo -c -impl src/main.ml)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/uarithexprLib.cma src/.uarithexprLib.objs/byte/uarithexprLib.cmo src/.uarithexprLib.objs/byte/uarithexprLib__Ast.cmo src/.uarithexprLib.objs/byte/uarithexprLib__Parser.cmo src/.uarithexprLib.objs/byte/uarithexprLib__Lexer.cmo src/.uarithexprLib.objs/byte/uarithexprLib__Main.cmo)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I src/.uarithexprLib.objs/byte -I src/.uarithexprLib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open UarithexprLib -o src/.uarithexprLib.objs/native/uarithexprLib__Main.cmx -c -impl src/main.ml)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I test/.uarithexpr.objs/byte -I /home/leinad/.opam/lip/lib/base -I /home/leinad/.opam/lip/lib/base/base_internalhash_types -I /home/leinad/.opam/lip/lib/base/caml -I /home/leinad/.opam/lip/lib/base/shadow_stdlib -I /home/leinad/.opam/lip/lib/jane-street-headers -I /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/config -I /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib -I /home/leinad/.opam/lip/lib/sexplib0 -I /home/leinad/.opam/lip/lib/time_now -I src/.uarithexprLib.objs/byte -no-alias-deps -opaque -o test/.uarithexpr.objs/byte/uarithexpr.cmo -c -impl test/uarithexpr.pp.ml)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o src/uarithexprLib.cmxa src/.uarithexprLib.objs/native/uarithexprLib.cmx src/.uarithexprLib.objs/native/uarithexprLib__Ast.cmx src/.uarithexprLib.objs/native/uarithexprLib__Parser.cmx src/.uarithexprLib.objs/native/uarithexprLib__Lexer.cmx src/.uarithexprLib.objs/native/uarithexprLib__Main.cmx)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o test/uarithexpr.cma test/.uarithexpr.objs/byte/uarithexpr.cmo)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -I bin/.main.eobjs/byte -I /home/leinad/.opam/lip/lib/base -I /home/leinad/.opam/lip/lib/base/base_internalhash_types -I /home/leinad/.opam/lip/lib/base/caml -I /home/leinad/.opam/lip/lib/base/shadow_stdlib -I /home/leinad/.opam/lip/lib/jane-street-headers -I /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/config -I /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib -I /home/leinad/.opam/lip/lib/sexplib0 -I /home/leinad/.opam/lip/lib/time_now -I src/.uarithexprLib.objs/byte -I test/.uarithexpr.objs/byte -no-alias-deps -opaque -o bin/.main.eobjs/byte/dune__exe__Main.cmi -c -intf bin/main.mli)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.uarithexpr.objs/byte -I test/.uarithexpr.objs/native -I /home/leinad/.opam/lip/lib/base -I /home/leinad/.opam/lip/lib/base/base_internalhash_types -I /home/leinad/.opam/lip/lib/base/caml -I /home/leinad/.opam/lip/lib/base/shadow_stdlib -I /home/leinad/.opam/lip/lib/jane-street-headers -I /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/config -I /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib -I /home/leinad/.opam/lip/lib/sexplib0 -I /home/leinad/.opam/lip/lib/time_now -I src/.uarithexprLib.objs/byte -I src/.uarithexprLib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o test/.uarithexpr.objs/native/uarithexpr.cmx -c -impl test/uarithexpr.pp.ml)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I bin/.main.eobjs/byte -I bin/.main.eobjs/native -I /home/leinad/.opam/lip/lib/base -I /home/leinad/.opam/lip/lib/base/base_internalhash_types -I /home/leinad/.opam/lip/lib/base/caml -I /home/leinad/.opam/lip/lib/base/shadow_stdlib -I /home/leinad/.opam/lip/lib/jane-street-headers -I /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/config -I /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib -I /home/leinad/.opam/lip/lib/sexplib0 -I /home/leinad/.opam/lip/lib/time_now -I src/.uarithexprLib.objs/byte -I src/.uarithexprLib.objs/native -I test/.uarithexpr.objs/byte -I test/.uarithexpr.objs/native -intf-suffix .ml -no-alias-deps -opaque -o bin/.main.eobjs/native/dune__exe__Main.cmx -c -impl bin/main.ml)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o test/uarithexpr.cmxa test/.uarithexpr.objs/native/uarithexpr.cmx)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I src -o src/uarithexprLib.cmxs src/uarithexprLib.cmxa)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -shared -linkall -I test -o test/uarithexpr.cmxs test/uarithexpr.cmxa)
-$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -o bin/main.exe src/uarithexprLib.cmxa /home/leinad/.opam/lip/lib/ppx_inline_test/config/inline_test_config.cmxa /home/leinad/.opam/lip/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/leinad/.opam/lip/lib/base/base_internalhash_types /home/leinad/.opam/lip/lib/base/caml/caml.cmxa /home/leinad/.opam/lip/lib/sexplib0/sexplib0.cmxa /home/leinad/.opam/lip/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/leinad/.opam/lip/lib/base/base.cmxa -I /home/leinad/.opam/lip/lib/base /home/leinad/.opam/lip/lib/jane-street-headers/jane_street_headers.cmxa /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/leinad/.opam/lip/lib/time_now/time_now.cmxa -I /home/leinad/.opam/lip/lib/time_now /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa test/uarithexpr.cmxa bin/.main.eobjs/native/dune__exe__Main.cmx)
+$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -bin-annot -I test/.uarithexpr.inline-tests/.uarithexpr.inline-tests.eobjs/byte -I /home/leinad/.opam/lip/lib/base -I /home/leinad/.opam/lip/lib/base/base_internalhash_types -I /home/leinad/.opam/lip/lib/base/caml -I /home/leinad/.opam/lip/lib/base/shadow_stdlib -I /home/leinad/.opam/lip/lib/jane-street-headers -I /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/config -I /home/leinad/.opam/lip/lib/ppx_inline_test/runner/lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib -I /home/leinad/.opam/lip/lib/sexplib0 -I /home/leinad/.opam/lip/lib/time_now -I src/.uarithexprLib.objs/byte -I test/.uarithexpr.objs/byte -no-alias-deps -o test/.uarithexpr.inline-tests/.uarithexpr.inline-tests.eobjs/byte/dune__exe__Inline_test_runner_uarithexpr.cmo -c -impl test/.uarithexpr.inline-tests/inline_test_runner_uarithexpr.ml-gen)
+$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -I test/.uarithexpr.inline-tests/.uarithexpr.inline-tests.eobjs/byte -I test/.uarithexpr.inline-tests/.uarithexpr.inline-tests.eobjs/native -I /home/leinad/.opam/lip/lib/base -I /home/leinad/.opam/lip/lib/base/base_internalhash_types -I /home/leinad/.opam/lip/lib/base/caml -I /home/leinad/.opam/lip/lib/base/shadow_stdlib -I /home/leinad/.opam/lip/lib/jane-street-headers -I /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/config -I /home/leinad/.opam/lip/lib/ppx_inline_test/runner/lib -I /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib -I /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib -I /home/leinad/.opam/lip/lib/sexplib0 -I /home/leinad/.opam/lip/lib/time_now -I src/.uarithexprLib.objs/byte -I src/.uarithexprLib.objs/native -I test/.uarithexpr.objs/byte -I test/.uarithexpr.objs/native -intf-suffix .ml-gen -no-alias-deps -o test/.uarithexpr.inline-tests/.uarithexpr.inline-tests.eobjs/native/dune__exe__Inline_test_runner_uarithexpr.cmx -c -impl test/.uarithexpr.inline-tests/inline_test_runner_uarithexpr.ml-gen)
+$ (cd _build/default && /home/leinad/.opam/lip/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -o test/.uarithexpr.inline-tests/inline_test_runner_uarithexpr.exe src/uarithexprLib.cmxa /home/leinad/.opam/lip/lib/ppx_inline_test/config/inline_test_config.cmxa /home/leinad/.opam/lip/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/leinad/.opam/lip/lib/base/base_internalhash_types /home/leinad/.opam/lip/lib/base/caml/caml.cmxa /home/leinad/.opam/lip/lib/sexplib0/sexplib0.cmxa /home/leinad/.opam/lip/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/leinad/.opam/lip/lib/base/base.cmxa -I /home/leinad/.opam/lip/lib/base /home/leinad/.opam/lip/lib/jane-street-headers/jane_street_headers.cmxa /home/leinad/.opam/lip/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/leinad/.opam/lip/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/leinad/.opam/lip/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /home/leinad/.opam/lip/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/leinad/.opam/lip/lib/time_now/time_now.cmxa -I /home/leinad/.opam/lip/lib/time_now /home/leinad/.opam/lip/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa test/uarithexpr.cmxa /home/leinad/.opam/lip/lib/ppx_inline_test/runner/lib/ppx_inline_test_runner_lib.cmxa -I /home/leinad/.opam/lip/lib/ppx_inline_test/runner/lib test/.uarithexpr.inline-tests/.uarithexpr.inline-tests.eobjs/native/dune__exe__Inline_test_runner_uarithexpr.cmx -linkall)
+$ (cd _build/.sandbox/752adea20382b7a8394126cd9b5bff58/default/test && .uarithexpr.inline-tests/inline_test_runner_uarithexpr.exe inline-test-runner uarithexpr -source-tree-root .. -diff-cmd -)
+>
+> *** Testing big-step semantics...
+> if true then true else false and false => 1 [OK]
+> if true then false else false or true => 0 [OK]
+> succ 0 => 1 [OK]
+> succ succ succ pred pred succ succ pred succ pred succ 0 => 3 [OK]
+> not iszero 0 or not iszero succ 0 => 1 [OK]
+> iszero pred succ 0 => 1 [OK]
+> not iszero succ pred succ 0 => 1 [OK]
+> iszero pred succ 0 and not iszero succ pred succ 0 => 1 [OK]
+> iszero true => 0 [OK]
+> succ iszero 0 => 2 [OK]
+> not 0 => 1 [OK]
+> succ 0 and succ succ 0 => 1 [OK]
+> 0 or succ succ 0 => 1 [OK]
+> if succ iszero(succ 0 and succ succ 0) then true else 0 => 1 [OK]
+> succ 0 or 0 => 1 [OK]
+> pred 0 => 0 [OK]
+> pred pred succ 0 => 0 [OK]
+> true and succ succ pred pred succ 0 => 1 [OK]
+> true and false => 0 [OK]
+> false and true => 0 [OK]
+>
+> *** Testing small-step semantics...
+> if true then true else false and false -> 1 [OK]
+> if true then false else false or true -> 0 [OK]
+> succ 0 -> 1 [OK]
+> succ succ succ pred pred succ succ pred succ pred succ 0 -> 3 [OK]
+> not iszero 0 or not iszero succ 0 -> 1 [OK]
+> iszero pred succ 0 -> 1 [OK]
+> not iszero succ pred succ 0 -> 1 [OK]
+> iszero pred succ 0 and not iszero succ pred succ 0 -> 1 [OK]
+> iszero true -> 0 [OK]
+> succ iszero 0 -> 2 [OK]
+> not 0 -> 1 [OK]
+> succ 0 and succ succ 0 -> 1 [OK]
+> 0 or succ succ 0 -> 1 [OK]
+> if succ iszero(succ 0 and succ succ 0) then true else 0 -> 1 [OK]
+> succ 0 or 0 -> 1 [OK]
+> pred 0 -> 0 [OK]
+> pred pred succ 0 -> 0 [OK]
+> true and succ succ pred pred succ 0 -> 1 [OK]
+> true and false -> 0 [OK]
+> false and true -> 0 [OK]
