@@ -1,0 +1,25 @@
+type token =
+    ZERO
+  | VAR
+  | TRUE
+  | THEN
+  | SUCC
+  | RPAREN
+  | PRED
+  | OR
+  | NOT
+  | LPAREN
+  | LET
+  | ISZERO
+  | IN
+  | IF
+  | ID of string
+  | FALSE
+  | EQUALTO
+  | EOF
+  | ELSE
+  | AND
+val menhir_begin_marker : int
+val xv_prog : Ast.expr
+val xv_expr : Ast.expr
+val menhir_end_marker : int
